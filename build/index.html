@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acme Rockets</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -17,16 +18,31 @@
         <a href="#hero"> 🚀 Acme Rockets </a>
       </h1>
       <div>
-        <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+        <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer hover:opacity-80">
           &#9776;
         </button>
-        <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+        <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
           <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
           <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
           <a href="#contact" class="hover:opacity-90">Contact Us</a>
         </nav>
       </div>
     </section>
+
+    <section id="mobile-menu"
+      class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+      <button class="text-8xl self-end px-6 hover:opacity-80">
+        &times;
+      </button>
+      <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+        <a href="#hero" class="w-full text-center py-6 hover:opacity-80"> Home</a>
+        <a href="#rockets" class="w-full text-center py-6 hover:opacity-80"> Rockets</a>
+        <a href="#testimonials" class="w-full text-center py-6 hover:opacity-80"> Testimonials</a>
+        <a href="#contact" class="w-full text-center py-6 hover:opacity-80"> Contact Us</a>
+        <a href="#footer" class="w-full text-center py-6 hover:opacity-80"> Legal</a>
+      </nav>
+    </section>
+
   </header>
 
   <main class="max-w-4xl mx-auto">
@@ -48,7 +64,8 @@
 
     <hr class="mx-auto bg-black dark:bg-white w-1/2">
 
-    <section id="rockets" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height flex flex-col justify-center">
+    <section id="rockets"
+      class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height flex flex-col justify-center">
       <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
         Our Rockets
       </h2>
