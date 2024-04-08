@@ -1,9 +1,10 @@
-# Acme Rockets
+# 🚀 Acme Rockets
 
 Welcome to Acme Rockets! We boldly go where no rocket has gone before...\
 Acme Rockets is a static web page created for the purpose of learning Tailwind CSS.
 
-Live website: [Acme Rockets](https://acmerockets-erim.onrender.com/)
+Live website:
+<a href="https://acmerockets-erim.onrender.com/" target="_blank">Acme Rockets</a>
 
 ## Features
 The Acme Rockets website leverages Tailwind CSS to design the entire website:
